@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
-    <nav className="z-10 fixed top-0 flex-no-wrap flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
-      <div className="flex w-full flex-wrap items-center justify-between px-3">
+    <nav className="z-10 opacity-60 sticky top-0  bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-black dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-2">
+      <div className="flex justify-between px-3">
         {/* <!-- Hamburger button for mobile view --> */}
         <button
           className="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
@@ -40,11 +40,12 @@ export default function Navbar() {
             className="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
             href="#"
           >
-            {/* <img
-              src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
-cl              alt="TE Logo"
+            <img
+              src="https://thumbs2.imgbox.com/aa/84/fwTcYGzT_t.png"
+              className="w-50 h-16"
+              alt="logo bamm"
               loading="lazy"
-            /> */}
+            />
           </a>
           {/* <!-- Left navigation links --> */}
           <ul
