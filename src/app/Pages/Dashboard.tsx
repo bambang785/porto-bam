@@ -1,75 +1,46 @@
 import React from "react";
 
-export default function Dashboard() {
+function Dashboard() {
   return (
-    <main>
-      <div className="relative bg-white bg-cover bg-center bg-no-repeat">
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className=" block w-full max-w-lg rounded bg-black font-primary text-3xl font-extrabold text-white opacity-70 sm:text-5xl">
-              Octopath Traveler II
-            </h1>
+    <section className="bg-white dark:bg-gray-900">
+      <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className=" mr-auto place-self-center lg:col-span-7">
+          <h1 className=" animate-fade-down animate-once max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            Hi!
+          </h1>
+          <h1 className=" animate-fade-down animate-once max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+            I'm Bamm.
+          </h1>
+          <p className="animate-fade-right animate-once max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            I have a strong passion for IT, especially in front-end web
+            development and mobile development.
+          </p>
+          <button className="animate-duration-[900ms] animate-jump animate-once animate-ease-in group relative  px-12 py-3  text-center opacity-75 ">
+            <a href="Octopath">
+              <span className="absolute inset-1 h-full w-full translate-x-1 positio translate-y-1 transform bg-black transition duration-300 ease-out group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+              <span className="absolute inset-0 h-full w-full border-2 border-black bg-slate-50 group-hover:bg-black"></span>
+              <span className="relative font-bold text-black group-hover:text-white">
+                Projects
+              </span>
+            </a>
+          </button>
 
-            <p className="mt-4 block w-full max-w-lg rounded bg-black font-primary text-white opacity-70 sm:text-xl/relaxed">
-              The story takes place in Solistia, a land comprising an eastern
-              and western continent divided by the sea. It is a bustling era,
-              wherein large vessels navigate busy sea routes and the power of
-              steam gives birth to new technologies. Some people thrill to
-              glamorous stars of the stage and industry, while others are
-              brought to tears by war, plague, and poverty. In this faraway
-              realm, eight travelers hailing from different regions venture
-              forth for their own reasons. Step into their shoes and explore the
-              land as you see fit, using their unique talents to aid you along
-              your journey. Embark on an adventure all your own.
-            </p>
-
-            <button className="group relative mt-8 px-12 py-3  text-center opacity-75">
-              <a href="#/Octopath2">
-                <span className="absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-black transition duration-300 ease-out group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 h-full w-full border-2 border-black bg-slate-50 group-hover:bg-black"></span>
-                <span className="relative font-bold text-black group-hover:text-white">
-                  Enter
-                </span>
-              </a>
-            </button>
-          </div>
+          <button className="animate-duration-[900ms] animate-jump animate-once animate-ease-in group relative mt-8 px-12 py-3  text-center opacity-75  sm:mx-[50px]">
+            <a href="Octopath">
+              <span className="absolute inset-1 h-full w-full translate-x-1 translate-y-1 transform bg-black transition duration-300 ease-out group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+              <span className="absolute inset-0 h-full w-full border-2 border-black bg-slate-50 group-hover:bg-black"></span>
+              <span className="relative font-bold text-black group-hover:text-white">
+                About me
+              </span>
+            </a>
+          </button>
+        </div>
+        <div className=" lg:mt-0 lg:col-span-5 lg:flex">
+          <img className="bg-react" alt="mockup"></img>
         </div>
       </div>
-
-      {/* page 2 */}
-
-      <div className="relative  bg-black bg-cover bg-center bg-no-repeat">
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className=" block w-full max-w-lg rounded bg-black font-primary text-3xl font-extrabold text-white opacity-70 sm:text-5xl">
-              Octopath Traveler II
-            </h1>
-
-            <p className="mt-4 block w-full max-w-lg rounded bg-black font-primary text-white opacity-70 sm:text-xl/relaxed">
-              The story takes place in Solistia, a land comprising an eastern
-              and western continent divided by the sea. It is a bustling era,
-              wherein large vessels navigate busy sea routes and the power of
-              steam gives birth to new technologies. Some people thrill to
-              glamorous stars of the stage and industry, while others are
-              brought to tears by war, plague, and poverty. In this faraway
-              realm, eight travelers hailing from different regions venture
-              forth for their own reasons. Step into their shoes and explore the
-              land as you see fit, using their unique talents to aid you along
-              your journey. Embark on an adventure all your own.
-            </p>
-
-            <button className="group relative mt-8 px-12 py-3  text-center opacity-75">
-              <a href="#/Octopath2">
-                <span className="absolute inset-0 h-full w-full translate-x-1 translate-y-1 transform bg-black transition duration-300 ease-out group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 h-full w-full border-2 border-black bg-slate-50 group-hover:bg-black"></span>
-                <span className="relative font-bold text-black group-hover:text-white">
-                  Enter
-                </span>
-              </a>
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
+    </section>
   );
 }
+
+export default Dashboard;
