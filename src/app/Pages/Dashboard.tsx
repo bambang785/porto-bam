@@ -35,9 +35,7 @@ function Dashboard() {
             </a>
           </button>
         </div>
-        <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-          <img className="bg-react" alt="mockup"></img>
-        </div>
+        <div className=" lg:mt-0 lg:col-span-5 lg:flex"></div>
       </div>
     </section>
   );
